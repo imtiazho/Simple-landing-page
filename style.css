@@ -1,0 +1,152 @@
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Default Style */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;    
+    text-decoration: none;
+    outline: none;
+    border: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: #fff;
+}
+img{
+    max-width: 100%;
+}
+
+/* Here Start Header style */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    max-width: 80px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul a{
+    display: inline-block;
+    margin-left: 40px;
+    color: #333;
+    font-weight: 400;
+}
+
+/* Here Start Content style */
+.content{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.content .text-box{
+    position: relative;
+    width: 50%;
+}
+.content .text-box h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.content .text-box h2 span{
+    font-size: 1.2em;
+    color: #017143;
+    font-weight: 900;
+}
+.content .text-box p{
+    color: #333;
+}
+.content .text-box a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #017143;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px
+}
+.img-box{
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.img-box img{
+    max-width: 340px;
+}
+
+/* Here start thumb style */
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+.thumb li{
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+.thumb li img{
+    max-width: 60px;
+}
+
+/* Here start social style */
+.social{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+
+/* Background Circle */
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}

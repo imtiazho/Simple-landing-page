@@ -10,8 +10,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <section>
+        <!-- Background circle -->
+        <div class="circle"></div>
+        <!-- Here start header -->
+        <header>
+            <a href="#"><img src="images/logo.png" alt="picture of logo"  class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <!-- Here End header -->
 
+        <!-- Here satrt content -->
+        <div class="content">
+            <div class="text-box">
+                <h2>It's not just coffee<br>It's <span>Startbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque placeat facere error officia, recusandae explicabo quam voluptatibus. Fuga, consequatur ullam.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="img-box">
+                <img src="images/img1.png" alt="Picture of starbucks" class="startbucks">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="images/thumb1.png" onclick="imgSlider('images/img1.png'); circleColorChange('#017143')" alt="Picture of thumbnail"></li>
+            <li><img src="images/thumb2.png" onclick="imgSlider('images/img2.png'); circleColorChange('#eb7495')" alt="Picture of thumbnail"></li>
+            <li><img src="images/thumb3.png" onclick="imgSlider('images/img3.png'); circleColorChange('#d752b1')" alt="Picture of thumbnail"></li>
+        </ul>
+
+        <ul class="social">
+            <li><a href="#"><img src="images/facebook.png"></a></li>
+            <li><a href="#"><img src="images/instagram.png"></a></li>
+            <li><a href="#"><img src="images/twitter.png"></a></li>
+        </ul>
+        <!-- Here end content -->
+    </section>
 
     <!-- Main JavaScript File -->
     <script src="main.js"></script>
