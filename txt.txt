@@ -1,0 +1,37 @@
+
+
+
+
+/* Responsive Part */
+@media (max-width: 1030px){
+    header{
+        padding: 20px;
+    }
+    header .logo{
+        max-width: 50px;
+    }
+    header ul{
+        display: none;
+    }
+    section{
+        padding: 20px 20px 120px;
+    }
+    .content{
+        flex-direction: column;
+        margin-top: 400px;
+    }
+    .content .text-box{
+        width: 100%;
+    }
+    .content .text-box h2{
+        font-size: 3em;
+        margin-bottom: 15px;
+    }
+    .circle{
+        clip-path: circle(300px at center bottom)
+    }
+    .img-box{
+        max-width: 100%;
+        justify-content: flex-start;
+    }
+}

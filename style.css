@@ -16,12 +16,6 @@
 section{
     position: relative;
     width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px;
-    background-color: #fff;
 }
 img{
     max-width: 100%;
@@ -29,21 +23,16 @@ img{
 
 /* Here Start Header style */
 header{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 10px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 header .logo{
-    position: relative;
-    max-width: 80px;
+    max-width: 60px;
 }
 header ul{
-    position: relative;
     display: flex;
 }
 header ul a{
@@ -52,18 +41,51 @@ header ul a{
     color: #333;
     font-weight: 400;
 }
-
+.toggle{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url('images/menu.png');
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    display: none;
+}
+.toggle.active{
+    position: fixed;
+    right: 20px;
+    background: url('images/close.png');
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 20;
+}
+header ul.navigation.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
 /* Here Start Content style */
 .content{
-    position: relative;
     width: 100%;
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 .content .text-box{
-    position: relative;
     width: 50%;
 }
 .content .text-box h2{
@@ -100,6 +122,7 @@ header ul a{
 .img-box img{
     max-width: 340px;
 }
+
 
 /* Here start thumb style */
 .thumb{
@@ -149,4 +172,74 @@ header ul a{
     height: 100%;
     background: #017143;
     clip-path: circle(600px at right 800px);
+}
+
+@media screen and (max-width: 1050px) {
+    header{
+        padding: 20px;
+    }
+    .content{
+        padding: 0 20px;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .circle{
+        clip-path: circle(300px at center bottom)
+    }
+    .content .text-box {
+        width: 100%;
+    }
+    .content .text-box p{
+        width: 70%;
+    }
+    .social {
+        right: 0px;
+        background: #017143;
+        border-top-left-radius: 5px ;
+        border-bottom-left-radius: 5px;
+    }
+    .img-box {
+        padding-bottom: 100px;
+        justify-content: center;
+    }
+    .thumb{
+        bottom: 5px;
+    }
+    .thumb li img {
+        max-width: 50px;
+    }
+}
+@media screen and (max-width: 710px){
+    header ul {
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+    header ul a{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 570px){
+    .content .text-box h2{
+        font-size: 2.3rem;
+    }
+    .content .text-box p{
+        width: 90%;
+    }
+    .img-box img{
+        max-width: 250px;
+    }
+    .img-box{
+        width: 400px;
+    }
+    header ul a{
+        margin-left: 0;
+    }
+    .content .text-box p{
+        font-size: 14px
+    }
 }
